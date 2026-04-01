@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Настройки API{% endblock %}
+{% block content %}
+<h2>Настройки API‑ключей</h2>
+<form method="post" action="/save_keys">
+    <div class="mb-3">
+        <label for="wb_key" class="form-label">API‑ключ Wildberries</label>
+        <input type="text" class="form-control" id="wb_key" name="wb_key" placeholder="Введите ключ">
+    </div>
+    <div class="mb-3">
+        <label for="ozon_client_id" class="form-label">Client ID Ozon</label>
+        <input type="text" class="form-control" id="ozon_client_id" name="ozon_client_id" placeholder="Client ID">
+    </div>
+    <div class="mb-3">
+        <label for="ozon_key" class="form-label">API‑ключ Ozon</label>
+        <input type="text" class="form-control" id="ozon_key" name="ozon_key" placeholder="API Key">
+    </div>
+    <button type="submit" class="btn btn-primary">Сохранить</button>
+</form>
+{% endblock %}

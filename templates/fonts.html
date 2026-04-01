@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Примеры шрифтов{% endblock %}
+{% block content %}
+<h2>Примеры шрифтов</h2>
+<div class="row">
+    <div class="col-md-6">
+        <div style="font-family: 'Times New Roman', serif;">Times New Roman (serif)</div>
+        <div style="font-family: Arial, sans-serif;">Arial (sans-serif)</div>
+        <div style="font-family: 'Courier New', monospace;">Courier New (monospace)</div>
+        <div style="font-family: cursive;">Cursive шрифт</div>
+        <div style="font-family: fantasy;">Fantasy шрифт</div>
+    </div>
+    <div class="col-md-6">
+        <div style="font-family: 'Roboto', sans-serif;">Roboto (Google Fonts)</div>
+        <div style="font-family: 'Open Sans', sans-serif;">Open Sans (Google Fonts)</div>
+        <div style="font-family: 'Lobster', cursive;">Lobster (cursive)</div>
+    </div>
+</div>
+<p class="mt-3">Подключение шрифтов Google Fonts выполняется в <code>base.html</code> через <code>&lt;link&gt;</code>.</p>
+{% endblock %}

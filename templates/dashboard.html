@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Дашборд{% endblock %}
+{% block content %}
+<h2>Ваши отзывы</h2>
+<div class="alert alert-info">
+    Здесь будут загружены отзывы с Wildberries и Ozon. Пока данные заглушка.
+</div>
+
+<tbody>
+    {% for review in reviews %}
+    <tr>
+        <td>{{ review.marketplace }}</td>
+        <td>{{ review.text }}</td>
+        <td>{{ review.date }}</td>
+        <td><button class="btn btn-sm btn-outline-primary">Ответить</button></td>
+    </tr>
+    {% endfor %}
+</tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,24 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;}
+
+.table-hover tbody tr:hover {
+    background-color: #e9ecef;
+    transition: 0.3s;}
+
+.btn {
+    transition: transform 0.2s;}
+
+.btn:hover {
+    transform: scale(1.02);}
+
+h1, h2 {
+    font-family: 'Georgia', serif;
+    font-weight: 700;
+    color: #2c3e50;}
+
+.jumbotron {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 1rem;}
